@@ -31,7 +31,15 @@ public class Main {
 
         companyToNumberOfEmployeesMap.computeIfAbsent("New company", MergeMap::calculateSomehow);
 
+//        int employees = calculateSomehow("New company");
+//        companyToNumberOfEmployeesMap.putIfAbsent("New company", employees);
+
         printArray(companyToNumberOfEmployeesMap);
+    }
+
+    public static int calculateSomehow(String company) {
+        // simulate complex calculations
+        return 30;
     }
 
     public static void printArray(Map<String, Integer> array) {
